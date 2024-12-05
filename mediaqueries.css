@@ -1,0 +1,159 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #experience, 
+    .experience-details-container {
+        margin-top: 2rem;
+
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .section,
+    .section-container {
+        height: fit-content;
+    }
+
+    .section {
+        margin: 0 5%;
+    }
+
+    .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-container {
+        margin-top: 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.2rem;
+        align-items: center; /* Ensures center alignment */
+    }
+
+    section {
+        margin: 0 2rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .menu-links.open {
+        display: block;
+        max-height: 300px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .article-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        height: auto;
+        margin: 2rem 0;
+    }
+}
+
+/* Very Small Mobile (e.g., under 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        font-size: 1.2rem;
+    }
+
+    .section_text_p2 {
+        font-size: 1.2rem;
+    }
+
+    /* Prevent shifting content on very small screens */
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section, .about-container, .article-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hamburger-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
